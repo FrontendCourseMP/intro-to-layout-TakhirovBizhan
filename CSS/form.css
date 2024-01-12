@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.drop {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1px;
+}
+
+.fir_but {
+    padding: 20px;
+    width: 48%;
+    height: unset;
+    margin: 0;
+    background-color: rgb(119, 0, 109);
+    color: #cf9;
+}
+
+.drop {
+    min-width: 331px !important;
+}
+
+.sec_but {
+    padding: 20px;
+    width: 48%;
+    height: unset;
+    margin: 0;
+    background-color: rgb(1, 126, 38);
+    color: #cf9;
+}
+
+.palce {
+    height: unset;
+    margin: 100px 300px;
+    text-align: center;
+    font-size: 26px;
+}
+
+
+fieldset,
+form button {
+    border-radius: 8px;
+}
+
+form>*>* {
+    margin: 0.50px;
+}
+
+input:not([type="radio"]),
+select {
+    padding: 5px
+}
+
+label {
+    margin-left: 1.5rem;
+}
+
+div:has(input) {
+    margin-bottom: 1rem;
+}
+
+fieldset:first-of-type {
+    margin-bottom: 2rem;
+}
+
+.fotty_wall:hover {
+    width: 9.50px;
+    transform: rotate(30deg) scale(1.5) skew(20deg);
+    transition: transform 300ms;
+}
+
+input:focus+label {
+    /* width: 9.50px; */
+    /* transform: rotate(30deg) scale(1.5) skew(20deg); */
+    transition: transform 300ms;
+}
+
+input:focus+label {
+    color: green !important;
+    border-radius: 4px;
+    transition: border 300ms;
+}
+
+input[type="radio"]:focus+label {
+    font-weight: 600;
+}
+
+input[required]+label {
+    color: blueviolet;
+}
+
+dt::first-letter {
+    font-size: 30px;
+    color: blueviolet;
+    font-weight: 1000;
+}
+
+dd::after {
+    content: "🛈";
+}
+
+form {
+    margin: 200px 300px 100px 300px;
+    font-size: 22px;
+    height: unset;
+    font-weight: 500;
+}
+
+.palce ul {
+    display: flex;
+    flex-basis: fill;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 100px auto;
+}
+
+.palce li {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    width: 100%;
+}
+
+.palce li:nth-of-type(even) {
+    color: rgb(8, 8, 110);
+}
+
+.palce li:nth-of-type(odd) {
+    color: rgb(11, 161, 166);
+}
+
+.footy_wall:hover {
+    width: 95px;
+    transform: rotate(30deg) scale(1.5) skew(20deg);
+    transition: transform 350ms;
+}
+
+.palce input:checked+label {
+    text-decoration: line-through;
+}
